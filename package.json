@@ -1,0 +1,15 @@
+{
+  "name": "ah-visual-regression",
+  "description": "Advisor Hub visual regression suite",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "npx cypress open",
+    "test": "cross-env PERCY_TOKEN=web_426182e77c160a3a85869eb8b7f05a5a3a2509a39767559da7742b9582819d71 percy exec -- cypress run --browser chrome"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.26.2",
+    "@percy/cypress": "^3.1.2",
+    "cross-env": "^7.0.3",
+    "cypress": "^12.17.2"
+  }
+}
