@@ -8,10 +8,9 @@ class Header {
         cy.get('span').contains('Logout').parent('button').click()
     }
 
-    selectHeaderMenu(groupName) {
-        cy.contains('a', groupName).then(menu => {
-            cy.wrap(menu).click()
-        })
+
+    clickHeader3lines() {
+        cy.get('span').contains('Open main menu').parent().click()
     }
 
 }
