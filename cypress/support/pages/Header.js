@@ -13,6 +13,14 @@ class Header {
         cy.get('span').contains('Open main menu').parent().click()
     }
 
+    ClickTextLogo() {
+        cy.get('span').contains('Advisor Hub').parent().click()
+    }
+
+    OpenNotificationsPopup() {
+        cy.get('span').contains('Notifications').parent().click()
+    }
+
 }
 
 module.exports = {
