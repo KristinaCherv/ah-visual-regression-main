@@ -13,7 +13,7 @@ class Header {
         cy.get('span').contains('Open main menu').parent().click()
     }
 
-    ClickTextLogo() {
+    ClickAHLogo() {
         cy.get('span').contains('Advisor Hub').parent().click()
     }
 
